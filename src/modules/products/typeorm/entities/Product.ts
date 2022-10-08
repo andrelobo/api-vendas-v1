@@ -17,10 +17,10 @@ class Product {
   quantity: number;
 
   @CreateDateColumn()
-  createdAt: Date;
+  created_at: Date;
 
   @UpdateDateColumn()
-  updateAt: Date;
+  updated_at: Date;
 }
 
 export default Product
