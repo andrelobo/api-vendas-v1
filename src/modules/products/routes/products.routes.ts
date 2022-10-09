@@ -18,7 +18,7 @@ productsRouter.post('/', productsController.create);
 
 productsRouter.put('/:id', productsController.update);
 
-productsRouter.delete('/', productsController.delete);
+productsRouter.delete('/:id', productsController.delete);
 
 
 export default productsRouter;
