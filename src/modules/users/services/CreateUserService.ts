@@ -1,5 +1,4 @@
 import AppError from "@shared/errors/AppError";
-import { userInfo } from "os";
 import { getCustomRepository } from "typeorm";
 import UsersRepository from "../typeorm/repositories/UsersRepository";
 import User from "../typeorm/Users";
