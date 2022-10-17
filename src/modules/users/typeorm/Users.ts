@@ -1,8 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
-@Entity('products')
+@Entity('users')
 
-class Product {
+class User {
 
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -10,11 +10,14 @@ class Product {
   @Column()
   name: string;
 
-  @Column('decimal')
-  price: number;
+  @Column()
+  email: string;
 
-  @Column('int')
-  quantity: number;
+  @Column()
+  password: string;
+
+  @Column()
+  avatar: string;
 
   @CreateDateColumn()
   created_at: Date;
@@ -23,4 +26,4 @@ class Product {
   updated_at: Date;
 }
 
-export default Product;
+export default User;
